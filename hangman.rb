@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pry'
 require './hangman_class.rb'
 
 enable :sessions
