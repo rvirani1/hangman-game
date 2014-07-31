@@ -2,7 +2,7 @@ require 'httparty'
   MAX_MISSES = 10
 
 class HangmanGame
-  attr_reader :guessed_array, :misses
+  attr_reader :guessed_array, :misses, :word_array
 
   def initialize
     #Get random word via API and store a hash where the key is the letter and the value is whether it's hidden

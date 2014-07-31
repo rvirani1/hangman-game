@@ -13,7 +13,7 @@ get '/' do
   if session[:game].won?
     middle_area = %{<h3 style="color: green">You won!</h3>}
   elsif session[:game].lost?
-    middle_area = %{<h3 style="color: red">You lost!</h3>}
+    middle_area = %{<h3 style="color: red">You lost!</h3> <br> <p>The word was #{session[:game].word_array.join("")}</p>}
   else
       middle_area = %{<form method="get" action="http://#{request.host}:#{request.port}/">
             Letter <input type="text" name="user_letter">
