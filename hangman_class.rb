@@ -18,7 +18,7 @@ class HangmanGame
   end
 
   def guess_letter(user_letter)
-    @guessed_array << user_letter
+    @guessed_array << user_letter unless guessed_array.include?(user_letter)
     @misses += 1 unless @word_array.include?(user_letter)
     puts "Number of misses: " + @misses.to_s
   end
