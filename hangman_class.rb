@@ -14,7 +14,7 @@ class HangmanGame
   end
 
   def hangman_image_url
-    "http://www.riazvirani.info/hangman/hang#{@misses}.gif"
+    "http://d15tjjmcu92bku.cloudfront.net/hangman/hang#{@misses}.gif"
   end
 
   def guess_letter(user_letter)
